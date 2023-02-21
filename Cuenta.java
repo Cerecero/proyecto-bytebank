@@ -13,7 +13,8 @@ public class Cuenta {
     int agencia;
     int numero;
     String titular;
-    //public static void main(String[] args) {
-        //System.out.println("Hello World!");
-    //}
+    
+    void depositar(double valor){
+        
+    }
 }
