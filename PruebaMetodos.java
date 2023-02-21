@@ -13,6 +13,8 @@ public class PruebaMetodos {
         Cuenta miCuenta = new Cuenta();
         miCuenta.saldo = 300;
         
-        miCuenta.depositar(0);
+        miCuenta.depositar(200);
+        
+        System.out.println(miCuenta.saldo);
     }
 }

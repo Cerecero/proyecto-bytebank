@@ -15,6 +15,6 @@ public class Cuenta {
     String titular;
     
     void depositar(double valor){
-        
+        saldo = saldo + valor;
     }
 }
