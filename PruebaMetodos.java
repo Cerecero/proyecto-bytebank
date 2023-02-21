@@ -14,10 +14,10 @@ public class PruebaMetodos {
         
         miCuenta.saldo = 300;
         miCuenta.depositar(200);
-        System.out.println(miCuenta.saldo);
+        System.out.println("Mi Cuenta deposito " + miCuenta.saldo);
         
         miCuenta.retirar(100);
-        System.out.println(miCuenta.saldo);
+        System.out.println("Mi Cuenta retiro " + miCuenta.saldo);
         
         Cuenta cuentaDeJimena = new Cuenta();
         cuentaDeJimena.depositar(1000);
@@ -30,6 +30,6 @@ public class PruebaMetodos {
         }
         
         System.out.println("Cuenta Jimena " + cuentaDeJimena.saldo);
-        System.out.println(miCuenta.saldo);
+        System.out.println("Mi Cuenta transferencia " + miCuenta.saldo);
     }
 }
