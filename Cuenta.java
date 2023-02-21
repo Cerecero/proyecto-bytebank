@@ -14,7 +14,7 @@ public class Cuenta {
     int numero;
     String titular;
     
-    void depositar(double valor){
-        saldo = saldo + valor;
+    public void depositar(double saldo){
+        this.saldo = this.saldo + saldo;
     }
 }
