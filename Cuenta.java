@@ -16,23 +16,22 @@ public class Cuenta {
     
     
     public void depositar(double saldo){
-        this.saldo = this.saldo + saldo;
+        this.saldo += saldo;
     }
     public boolean retirar(double valor){
         if(this.saldo >= valor){
-            this.saldo = this.saldo - valor;
+            this.saldo -= valor;
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
     public boolean transferir(double valor, Cuenta cuenta){
         if(this.saldo >= valor){
             this.saldo = this.saldo - valor;
             cuenta.depositar(valor);
             return true;
-        }else{
-            return false;
         }
+        return false;
+
     }
 }
