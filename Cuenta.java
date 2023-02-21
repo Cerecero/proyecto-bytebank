@@ -14,7 +14,16 @@ public class Cuenta {
     int numero;
     String titular;
     
+    
     public void depositar(double saldo){
         this.saldo = this.saldo + saldo;
+    }
+    public boolean retirar(double valor){
+        if(this.saldo >= valor){
+            this.saldo = this.saldo - valor;
+            return true;
+        } else {
+            return false;
+        }
     }
 }
