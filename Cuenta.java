@@ -13,10 +13,20 @@ public class Cuenta {
     private int agencia;
     private int numero;
     private Cliente titular = new Cliente();
-    
-    public Cuenta(){
+    //public Cuenta(){
+         
+    //}
+    public Cuenta(int agencia){
+        int total = 0;
+        if (agencia <= 0){
+            System.out.println("");
+            this.agencia = 1;
+        } else {
+            this.agencia = agencia;
+        }
+        total++;
         
-        System.out.println("Aqui se crea una nueva cuenta");
+        System.out.println("Se van creando: "+ total + " cuentas");
     }
     
     public void depositar(double saldo){
@@ -42,14 +52,14 @@ public class Cuenta {
         return this.saldo;
     }
     
-    public void setAgencia(int agencia) {
-        if (agencia > 0){
-            this.agencia = agencia;
-        } else {
-            System.out.println("No aceptamos valores negativos");
-        }
-        
-    }
+//    public void setAgencia(int agencia) {
+//        if (agencia > 0){
+//            this.agencia = agencia;
+//        } else {
+//            System.out.println("No aceptamos valores negativos");
+//        }
+//        
+//    }
 
     public int getAgencia() {
         return agencia;
