@@ -13,11 +13,13 @@ public class Cuenta {
     private int agencia;
     private int numero;
     private Cliente titular = new Cliente();
+    
+    private static int total = 0;
     //public Cuenta(){
          
     //}
     public Cuenta(int agencia){
-        int total = 0;
+        
         if (agencia <= 0){
             System.out.println("");
             this.agencia = 1;
