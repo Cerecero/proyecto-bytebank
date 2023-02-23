@@ -22,5 +22,8 @@ public class CrearCuenta {
 
             System.out.println("primera cuenta tiene " + primeraCuenta.saldo);
             System.out.println("segunda cuenta tiene " + segundaCuenta.saldo);
+            
+            //primeraCuenta.titular.nombre = "test";
+            //System.out.println(primeraCuenta.titular.nombre);
     }
 }

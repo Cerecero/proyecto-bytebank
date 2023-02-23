@@ -9,5 +9,8 @@ package proyecto.bytebank;
  * @author alejandro
  */
 public class Cliente {
-    String titular, documento, telefono; 
+    String titular;
+    String documento;
+    String telefono;
+    String nombre;
 }
