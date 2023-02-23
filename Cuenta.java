@@ -15,6 +15,7 @@ public class Cuenta {
     private Cliente titular = new Cliente();
     
     public Cuenta(){
+        
         System.out.println("Aqui se crea una nueva cuenta");
     }
     
