@@ -14,6 +14,10 @@ public class Cuenta {
     private int numero;
     private Cliente titular = new Cliente();
     
+    public Cuenta(){
+        System.out.println("Aqui se crea una nueva cuenta");
+    }
+    
     public void depositar(double saldo){
         this.saldo += saldo;
     }
