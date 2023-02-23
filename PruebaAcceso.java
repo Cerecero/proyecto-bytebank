@@ -16,6 +16,6 @@ public class PruebaAcceso {
         //cuenta.saldo = 200;
         cuenta.retirar(300);
                 
-        System.out.println(cuenta.obtenerSaldo());
+        System.out.println(cuenta.getSaldos());
     }
 }

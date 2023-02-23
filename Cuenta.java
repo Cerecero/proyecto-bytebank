@@ -33,7 +33,7 @@ public class Cuenta {
         return false;
 
     }
-    public double obtenerSaldo() {
+    public double getSaldos() {
         return this.saldo;
     }
 }
