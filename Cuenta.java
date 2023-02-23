@@ -14,8 +14,6 @@ public class Cuenta {
     int numero;
     Cliente titular = new Cliente();
     
-    
-    
     public void depositar(double saldo){
         this.saldo += saldo;
     }
@@ -34,5 +32,8 @@ public class Cuenta {
         }
         return false;
 
+    }
+    public double obtenerSaldo() {
+        return this.saldo;
     }
 }
