@@ -13,7 +13,6 @@ public class Cuenta {
     private int agencia;
     private int numero;
     private Cliente titular = new Cliente();
-    
     private static int total = 0;
     //public Cuenta(){
          
