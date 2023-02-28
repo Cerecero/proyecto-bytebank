@@ -9,7 +9,7 @@ package proyecto.bytebank;
  * @author alejandro
  */
 public abstract class Cuenta {
-    private double saldo;
+    protected double saldo;
     private int agencia;
     private int numero;
     private Cliente titular = new Cliente();
