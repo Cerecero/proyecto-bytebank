@@ -8,22 +8,13 @@ package proyecto.bytebank;
  *
  * @author alejandro
  */
-public class Administrador extends Funcionario implements Autenticable {
+public class AutenticacionUtil {
     private String clave;
     
-    @Override
-    public double getBonificacion() {
-        return this.getSalario();
-    }
-
-    @Override
-    public void setClave(String clave) {
-        this.clave = clave;
-    }
-
-    @Override
-    public boolean iniciarSesion(String clave) {
+    public boolean iniciarSesion(String clave){
         return this.clave.equals(clave);
     }
-    
+    public void setClave(String clave){
+        this.clave = clave;
+    }
 }

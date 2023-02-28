@@ -8,19 +8,18 @@ package proyecto.bytebank;
  *
  * @author alejandro
  */
-public class Autenticable extends Funcionario{
-    private String clave;
+public abstract interface Autenticable{
     
-    public void setClave(String clave){
-        this.clave = clave;
-    }
     
-    public boolean iniciarSesion(String clave){
-        return clave.equals("ClaveCorrecta");
-    }
+    public void setClave(String clave);
+    
+    public boolean iniciarSesion(String clave);
+    //{
+        //return clave.equals("ClaveCorrecta");
+    //}
 
-    @Override
-    public double getBonificacion() {
-        return 0;
-    }
+//    @Override
+//    public double getBonificacion() {
+//        return 0;
+//    }
 }

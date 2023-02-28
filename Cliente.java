@@ -8,11 +8,13 @@ package proyecto.bytebank;
  *
  * @author alejandro
  */
-public class Cliente {
+public class Cliente implements Autenticable {
     private String titular;
     private String documento;
     private String telefono;
     private String nombre;
+    
+    private String clave;
 
     public String getTitular() {
         return titular;
@@ -44,6 +46,16 @@ public class Cliente {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    @Override
+    public void setClave(String clave) {
+        this.clave = clave;
+    }
+
+    @Override
+    public boolean iniciarSesion(String clave) {
+        return this.clave.equals(clave);
     }
     
     

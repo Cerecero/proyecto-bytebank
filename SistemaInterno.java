@@ -12,7 +12,7 @@ public class SistemaInterno {
     
     private String clave = "ClaveCorrecta";
     
-    public boolean autentica(FuncionarioAutenticable gerente) {
+    public boolean autentica(Autenticable gerente) {
         boolean puedeIniciarSesion = gerente.iniciarSesion(clave);
         if (puedeIniciarSesion) {
             System.out.println("Login exitoso");
