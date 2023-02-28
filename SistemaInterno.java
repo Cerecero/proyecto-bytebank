@@ -14,7 +14,13 @@ public class SistemaInterno {
     
     public boolean autentica(Gerente gerente) {
         boolean puedeIniciarSesion = gerente.iniciarSesion(clave);
-        return false;
+        if (puedeIniciarSesion) {
+            System.out.println("Login exitoso");
+            return true;
+        } else {
+            System.out.println("Error en login");
+            return false;
+        }
     }
     
 }

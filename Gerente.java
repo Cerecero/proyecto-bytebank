@@ -8,17 +8,9 @@ package proyecto.bytebank;
  *
  * @author alejandro
  */
-public class Gerente extends Funcionario{
-    private String clave;
+public class Gerente extends FuncionarioAutenticable{
     
-    public void setClave(String clave){
-        this.clave = clave;
-    }
-    
-    public boolean iniciarSesion(String clave){
-        return clave.equals("ClaveCorrecta");
-    }
     public double getBonificacion(){
-        return super.getSalario() + this.getSalario() * 0.05;
+        return 2000;
     }
 }
