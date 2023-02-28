@@ -8,6 +8,6 @@ package proyecto.bytebank;
  *
  * @author alejandro
  */
-public class Contador {
+public class Contador extends Funcionario{
     
 }
