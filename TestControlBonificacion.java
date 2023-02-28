@@ -17,7 +17,9 @@ public class TestControlBonificacion {
         jimena.setSalario(10000);
         
         ControlBonificacion controlBonificacion = new ControlBonificacion();
+        
         controlBonificacion.registrarSalario(diego);
+        controlBonificacion.registrarSalario(jimena);
         
         
     }
