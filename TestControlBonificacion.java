@@ -17,7 +17,7 @@ public class TestControlBonificacion {
         jimena.setSalario(10000);
         
         Contador alexiz = new Contador();
-        alexiz.getSalario(5000);
+        alexiz.setSalario(5000);
         
         ControlBonificacion controlBonificacion = new ControlBonificacion();
         
