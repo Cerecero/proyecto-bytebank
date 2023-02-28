@@ -8,7 +8,7 @@ package proyecto.bytebank;
  *
  * @author alejandro
  */
-public class FuncionarioAutenticable {
+public class Autenticable extends Funcionario{
     private String clave;
     
     public void setClave(String clave){
@@ -17,5 +17,10 @@ public class FuncionarioAutenticable {
     
     public boolean iniciarSesion(String clave){
         return clave.equals("ClaveCorrecta");
+    }
+
+    @Override
+    public double getBonificacion() {
+        return 0;
     }
 }

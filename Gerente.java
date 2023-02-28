@@ -10,6 +10,7 @@ package proyecto.bytebank;
  */
 public class Gerente extends FuncionarioAutenticable{
     
+    @Override
     public double getBonificacion(){
         return 2000;
     }

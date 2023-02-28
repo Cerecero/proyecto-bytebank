@@ -9,7 +9,7 @@ package proyecto.bytebank;
  * @author alejandro
  */
 public class Administrador extends FuncionarioAutenticable {
-    
+    @Override
     public double getBonificacion() {
         return 0;
     }
