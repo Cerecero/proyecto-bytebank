@@ -22,4 +22,9 @@ public class ControlBonificacion {
         System.out.println("Calculo actual: " + this.suma);
         return this.suma;
     }
+    public double registrarSalario(Contador contador){
+        this.suma = contador.getBonificacion() + this.suma;
+        System.out.println("Calculo actual: " + this.suma);
+        return this.suma;
+    }
 }
