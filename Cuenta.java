@@ -8,7 +8,7 @@ package proyecto.bytebank;
  *
  * @author alejandro
  */
-public class Cuenta {
+public abstract class Cuenta {
     private double saldo;
     private int agencia;
     private int numero;
@@ -30,9 +30,8 @@ public class Cuenta {
         System.out.println("Se van creando: "+ total + " cuentas");
     }
     
-    public void depositar(double saldo){
-        this.saldo += saldo;
-    }
+    public abstract void depositar(double saldo);
+    
     public boolean retirar(double valor){
         if(this.saldo >= valor){
             this.saldo -= valor;
