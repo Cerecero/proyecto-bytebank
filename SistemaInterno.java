@@ -8,11 +8,13 @@ package proyecto.bytebank;
  *
  * @author alejandro
  */
-public class Administrador extends Funcionario {
-
-    @Override
-    public double getBonificacion() {
-        return 0;
+public class SistemaInterno {
+    
+    private String clave = "12345";
+    
+    public boolean autentica(Gerente gerente) {
+        boolean puedeIniciarSesion = gerente.iniciarSesion(clave);
+        return false;
     }
     
 }
